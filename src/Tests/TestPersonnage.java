@@ -9,6 +9,7 @@ class TestPersonnage {
 
 	@Test
 	void testPositionPersonnage() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		assertEquals(0, perso.getPosX());
 		assertEquals(0, perso.getPosY());
@@ -16,6 +17,7 @@ class TestPersonnage {
 	
 	@Test
 	void testDeplacementDroite() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		perso.deplacerX(1);
 		assertEquals(1,perso.getPosX());
@@ -23,6 +25,7 @@ class TestPersonnage {
 	
 	@Test
 	void testDeplacement2Droite() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		perso.deplacerX(1);
 		perso.deplacerX(1);
@@ -31,6 +34,7 @@ class TestPersonnage {
 	
 	@Test
 	void testDeplacementGauche() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		perso.deplacerX(-1);
 		assertEquals(-1,perso.getPosX());
@@ -38,6 +42,7 @@ class TestPersonnage {
 	
 	@Test
 	void testDeplacementHaut() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		perso.deplacerY(1);
 		assertEquals(1,perso.getPosY());
@@ -45,6 +50,7 @@ class TestPersonnage {
 	
 	@Test
 	void testDeplacementBas() {
+		Personnage.initialiserPersonnage();
 		Personnage perso = new Personnage();
 		perso.deplacerY(-1);
 		assertEquals(-1,perso.getPosY());

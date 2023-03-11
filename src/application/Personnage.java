@@ -2,28 +2,29 @@ package application;
 
 public class Personnage {
 
-	private int posX;
-	private int posY;
+	private static int posX;
+	private static int posY;
 	
-	public Personnage() {
-		this.posX = 0;
-		this.posY = 0;
+	public static void initialiserPersonnage() {
+		posX = 0;
+		posY = 0;
 	}
 
-	public int getPosX() {
+	public static int getPosX() {
 		return posX;
 	}
 
-	public int getPosY() {
+	public static int getPosY() {
 		return posY;
 	}
 
-	public void deplacerX(int x) {
-		this.posX += x;
+	public static void deplacerX(int x) {
+		posX += x;
 	}
 
-	public void deplacerY(int y) {
-		this.posY += y;
+	public static void deplacerY(int y) {
+		posY += y;
 	}
+
 
 }

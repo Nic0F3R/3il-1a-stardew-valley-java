@@ -2,6 +2,6 @@
 	
 <?import javafx.scene.layout.BorderPane?>
 	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccessibleValleyController">
+<BorderPane fx:id="borderPanel" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccessibleValleyController">
 	<!-- TODO Add Nodes -->
 </BorderPane>
