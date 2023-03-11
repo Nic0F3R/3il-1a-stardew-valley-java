@@ -18,4 +18,12 @@ public class Personnage {
 		return posY;
 	}
 
+	public void deplacerX(int x) {
+		this.posX += x;
+	}
+
+	public void deplacerY(int y) {
+		this.posY += y;
+	}
+
 }
